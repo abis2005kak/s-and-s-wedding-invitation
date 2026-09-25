@@ -114,7 +114,7 @@ revealCards.forEach(card => {
   observer.observe(card,{attributes:true,attributeFilter:['class']});
 });
 
-const weddingDate = new Date('2026-10-30T06:00:00+05:30').getTime();
+const weddingDate = new Date('2026-12-13T07:00:00+05:30').getTime();
 function tick(){
   let diff = Math.max(0, weddingDate - Date.now());
   const d = Math.floor(diff/86400000); diff%=86400000;

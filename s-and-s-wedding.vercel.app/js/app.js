@@ -136,7 +136,7 @@ const prevBtn = document.getElementById('storyPrev');
 const nextBtn = document.getElementById('storyNext');
 let storyIndex=0, startX=0, deltaX=0, dragging=false;
 function updateStory(){
-  //track.style.transform = `translateX(-${storyIndex*100}%)`;
+  track.style.transform = `translateX(-${storyIndex*100}%)`;
   storyCount.textContent = `${String(storyIndex+1).padStart(2,'0')} / 05`;
   prevBtn.disabled = storyIndex === 0;
   nextBtn.disabled = storyIndex === 4;

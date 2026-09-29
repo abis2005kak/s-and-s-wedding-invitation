@@ -130,27 +130,27 @@ tick(); setInterval(tick,1000);
 
 // Story carousel: swipe plus explicit previous/next buttons.
 // const track = document.getElementById('storyTrack');
-const frame = document.querySelector('.story-frame');
+// const frame = document.querySelector('.story-frame');
 // const storyCount = document.getElementById('storyCount');
 // const prevBtn = document.getElementById('storyPrev');
 // const nextBtn = document.getElementById('storyNext');
-let storyIndex=0, startX=0, deltaX=0, dragging=false;
-function updateStory(){
+// let storyIndex=0, startX=0, deltaX=0, dragging=false;
+// function updateStory(){
   // track.style.transform = `translateX(-${storyIndex*100}%)`;
   // storyCount.textContent = `${String(storyIndex+1).padStart(2,'0')} / 05`;
   // prevBtn.disabled = storyIndex === 0;
   // nextBtn.disabled = storyIndex === 4;
   // prevBtn.style.opacity = storyIndex === 0 ? '.45' : '1';
   // nextBtn.style.opacity = storyIndex === 4 ? '.45' : '1';
-}
-function goStory(step){ storyIndex=Math.max(0,Math.min(4,storyIndex+step)); updateStory(); }
+// }
+// function goStory(step){ storyIndex=Math.max(0,Math.min(4,storyIndex+step)); updateStory(); }
 // prevBtn.addEventListener('click',()=>goStory(-1));
 // nextBtn.addEventListener('click',()=>goStory(1));
 // frame.addEventListener('pointerdown', e=>{dragging=true;startX=e.clientX;deltaX=0;frame.setPointerCapture(e.pointerId)});
 // frame.addEventListener('pointermove', e=>{if(dragging) deltaX=e.clientX-startX});
 // frame.addEventListener('pointerup', e=>{if(!dragging)return;dragging=false;if(Math.abs(deltaX)>45)goStory(deltaX<0?1:-1);try{frame.releasePointerCapture(e.pointerId)}catch(err){}});
 // frame.addEventListener('pointercancel', ()=>{dragging=false});
-updateStory();
+// updateStory();
 
 const videoObserver = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
